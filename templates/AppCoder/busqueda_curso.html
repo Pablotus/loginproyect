@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block contenido_cambia %}
+    {% if cursos %}
+        {% for curso in cursos %}
+            <p>{{ curso }}</p>
+        {% endfor %}
+    {% else %}
+        <h3>no hay cursos filtrados</h3>
+    {% endif %}
+{% endblock %}
